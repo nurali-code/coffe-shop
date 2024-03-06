@@ -1,8 +1,68 @@
 @import 'normolize'
 @import 'fonts'
 @import 'elements'
+@import 'slick'
 @import 'header'
-@import 'footer'
+
+.menu
+    &-slide
+        display: flex !important
+        justify-content: space-between
+        margin: 0 10px
+        img
+            display: block
+            border-radius: 17px
+            object-fit: cover
+
+        .fx
+            flex-wrap: wrap
+            width: 49%
+
+    &-head
+        margin-bottom: 27px
+        position: relative
+        z-index: 1
+        &__text
+            display: inline-block
+            padding: 25px
+            min-width: 260px
+            font-size: 24px
+            font-weight: 700
+            text-align: center
+            text-transform: uppercase
+            color: white
+            background-color: #9B5D4E
+            border-radius: 10px 0px 0px 10px
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+
+    &__img
+        width: 48%
+
+.interior
+    .container
+        padding: 0
+
+    .h2
+        padding: 0 15px
+
+    &-slide
+        width: 486px
+        margin: 0 30px
+        img
+            display: block
+            aspect-ratio: 1/1
+            object-fit: cover
+            border-radius: 17px
+
+    @media screen and ( max-width: 800px)
+        &-slide
+            margin: 0 15px
+            width: 272px
+            img
+                border-radius: 10px
 
 .contacts
     margin-bottom: 70px
@@ -64,16 +124,18 @@
             padding: 21px 20px
             border-radius: 10px
 
-        &__label 
+        &__label
             font-size: 12px
             line-height: 120%
 
-        &__link 
+        &__link
             font-size: 14px
             line-height: 120%
 
-        &__icon 
+        &__icon
             width: 35px
             height: 35px
 
             border-radius: 4px
+
+@import 'footer'
