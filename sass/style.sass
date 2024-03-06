@@ -1,0 +1,79 @@
+@import 'normolize'
+@import 'fonts'
+@import 'elements'
+@import 'header'
+@import 'footer'
+
+.contacts
+    margin-bottom: 70px
+    &-wrap
+        align-items: stretch
+        margin-bottom: 30px
+
+    &__icon
+        width: 64px
+        height: 64px
+        border-radius: 10px
+
+    &-item
+        width: 32%
+        gap: 25px
+        display: flex
+        align-items: center
+        border-radius: 14px
+        background-color: #1A1A1A
+        padding: 33px 38px
+
+    &__label
+        display: block
+        color: #868686
+        font-size: 16px
+        line-height: 19.5px
+        margin: 0 0 3px
+
+    &__link
+        display: block
+        color: white
+        font-size: 20px
+        line-height: 24.38px
+
+    iframe
+        width: 100% !important
+        height: 360px !important
+        border-radius: 17px
+        background-color: #eee
+
+    @media screen and ( max-width: 1200px )
+        &-wrap
+            flex-wrap: wrap
+            gap: 15px 0
+        &-item
+            width: 49%
+            &:last-of-type
+                width: 100%
+
+    @media screen and ( max-width: 800px )
+        margin-bottom: 50px
+        &-wrap
+            gap: 13px
+            margin-bottom: 13px
+
+        &-item
+            gap: 17px
+            width: 100%
+            padding: 21px 20px
+            border-radius: 10px
+
+        &__label 
+            font-size: 12px
+            line-height: 120%
+
+        &__link 
+            font-size: 14px
+            line-height: 120%
+
+        &__icon 
+            width: 35px
+            height: 35px
+
+            border-radius: 4px
