@@ -1,6 +1,6 @@
 
 $('.btn_menu').on('click', function () {
-    $('#nav, .btn_menu, body').toggleClass('is_active');
+    $('.nav, .btn_menu, body').toggleClass('is_active');
 })
 
 $('.menu-slider').slick({
