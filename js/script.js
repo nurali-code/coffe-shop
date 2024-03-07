@@ -1,5 +1,5 @@
 
-$('.btn_menu').on('click', function () {
+$('.btn_menu, .nav__link').on('click', function () {
     $('.nav, .btn_menu, body').toggleClass('is_active');
 })
 
