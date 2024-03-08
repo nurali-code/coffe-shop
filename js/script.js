@@ -24,9 +24,32 @@ $('.menu-slider').slick({
     infinite: true,
     dots: false,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 4,
+    slideToScroll: 1,
     centerPadding: '0px',
     centerMode: true,
+    responsive: [
+        {
+            breakpoint: 1100,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                // centerPadding: '15px',
+                centerMode: true,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerPadding: '7.5px',
+                centerMode: true,
+                infinite: true,
+            }
+        }
+    ]
 });
 $('.interior-slider').slick({
     arrows: true,

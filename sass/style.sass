@@ -89,10 +89,10 @@
         top: 49%
         right: 30px
         max-width: 47%
-        border-radius: 19px
-        overflow: hidden
+        // overflow: hidden
         transform: rotate(3deg) translateY(-50%)
         img
+            border-radius: 19px
             display: block
 
         &::before
@@ -108,7 +108,23 @@
             position: absolute
             top: 0
             left: 0
-            border-radius: 0 0 18px 0
+            border-radius: 18px 0 18px 0
+            pointer-events: none
+
+        &::after
+            content: ''
+            pointer-events: none
+            display: block
+            width: 37px
+            height: 42px
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: contain
+            background-image: url('../img/pin.svg')
+            position: absolute
+            top: -18px
+            left: 53%
+            transform: translateX(-50%)
 
     &__text
         max-width: 48%
@@ -169,12 +185,19 @@
             transform: rotate(3deg)
             border-radius: 10px
             &::before
-                border-radius: 0 0 10px 0
+                border-radius: 10px 0 10px 0
                 width: 35px
                 height: 27px
                 background-size: 50% auto
+
+            &::after
+                width: 27px
+                height: 31px
+                top: -10px
+
             img
                 width: 100%
+                border-radius: 10px
 
         &-items
             display: block
@@ -192,14 +215,24 @@
             img
                 margin: 0
 
+    @media screen and ( max-width: 700px )
+        &-img
+            &::after
+                width: 18px
+                height: 21px
+                top: -10px
+
     @media screen and ( max-width: 420px )
         background-size: 130% auto
 
 .menu
+    &-slider 
+        max-width: 1310px
+        margin: 0 auto 
     &-slide
         display: flex !important
         justify-content: space-between
-        margin: 0 5px
+        margin: 0 7.5px
         img
             display: block
             object-fit: cover
@@ -209,7 +242,7 @@
             width: 49%
 
     &-head
-        margin-bottom: 27px
+        margin-bottom: 20px
         position: relative
         z-index: 1
         border-radius: 17px
@@ -234,32 +267,25 @@
                 opacity: .8
 
         img
+            display: block
             width: 100%
             aspect-ratio: 16/6.28
 
     &__img
         width: 48%
+        display: block
+        width: 100%
         border-radius: 17px
         aspect-ratio: 16/13.2
 
     @media screen and ( max-width: 900px )
-        .container
-            padding: 0
-
-        .h2
-            padding: 0 15px 0 52px
-            &::before
-                left: 15px
-
         &-slide
             display: block !important
             margin: 0 15px
 
-        .fx
+        &-wrap 
+            display: block
             width: 100%
-            &:first-child
-                .menu__img
-                    display: none
 
         &-head
             width: 100%
@@ -274,6 +300,9 @@
                 padding: 15px 10px
                 font-size: 14px
                 border-radius: 5px 0px 0px 5px
+
+        &-slide 
+            margin: 0 7.5px
 
         &__img
             border-radius: 10px
