@@ -1,7 +1,23 @@
 
-$('.btn_menu, .nav__link').on('click', function () {
+$('.btn_menu').on('click', function () {
     $('.nav, .btn_menu, body').toggleClass('is_active');
 })
+$('.nav__link').on('click', function () {
+    $('.nav, .btn_menu, body').removeClass('is_active');
+})
+
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 100) { $('.header').addClass('fixed'); }
+    else { $('.header').removeClass('fixed'); }
+    if ($(this).scrollTop() > 300) { $('.sroll_up').fadeIn(); }
+    else { $('.sroll_up').fadeOut(); }
+});
+
+$('a[href*="#"]').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 80, }, 300,)
+});
 
 $('.menu-slider').slick({
     arrows: true,

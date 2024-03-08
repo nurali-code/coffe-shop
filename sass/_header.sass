@@ -1,8 +1,15 @@
 .header
     width: 100%
     padding: 7px 0 !important
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 1111
+    transition: all ease .3s
+
     .nav
-        margin: 0 0 0 5px
+        margin: 0 0 0 15px
         width: 100%
         &__link
             padding: 10px 15px
@@ -21,7 +28,7 @@
             margin-right: 25px
             gap: 10px
             font-size: 16px
-            &:hover 
+            &:hover
                 text-decoration: underline
 
         &__link
@@ -36,6 +43,28 @@
     .btn_menu
         display: none
 
+    &.fixed
+        background-color: #1A1A1A
+        margin: 0
+        @media screen and ( min-width: 900px )
+            a:not(.logo)
+                color: white !important
+
+            .soc
+                .fx
+                    img
+                        filter: invert(1)
+                &__link
+                    img
+                        filter: invert(0)
+
+        .logo
+            max-width: 70px
+
+        .btn_menu
+            span, span:before, span:after
+                background-color: #fff
+
     @media screen and ( max-width: 1150px )
         .soc
             @media screen and ( min-width: 900px )
@@ -47,7 +76,7 @@
 
     @media screen and ( max-width: 900px )
         .logo
-            max-width: 62px
+            max-width: 62px !important
             position: relative
             z-index: 999
 

@@ -5,9 +5,6 @@
     border: none
     outline: none
 
-html
-    scroll-behavior: smooth
-
 body
     min-height: 100vh
     color: white
@@ -95,11 +92,28 @@ button
 section
     padding: 70px 0
 
+.sroll_up
+    display: none
+    transition: none
+    position: fixed
+    z-index: 999
+    bottom: 80px
+    right: 20px
+    width: 40px
+    height: 40px
+    background-color: #1A1A1A
+    background-color: #9b5d4e
+    border-radius: 50%
+    background-repeat: no-repeat
+    background-position: top 13px center
+    background-size: 50% auto 
+    background-image: url('../img/upp.svg')
+
 @media screen and ( max-width: 800px )
 
-    .btn 
+    .btn
         font-size: 10px
-        padding: 19px 37px 18px 
+        padding: 19px 37px 18px
         border-radius: 13px
 
     section
