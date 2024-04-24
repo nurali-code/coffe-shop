@@ -17,7 +17,7 @@
         top: 0
         right: 0
         height: 100%
-        width: 56%
+        width: 69%
         z-index: -1
         object-fit: contain
         object-position: center right
@@ -34,10 +34,14 @@
         img
             display: block
 
+    &__up 
+        font-size: 32px
+        line-height: 39.01px
+        margin: 0 0 12px
+
     &-descr
         gap: 15px
         font-size: 24px
-        color: #4E352B
         justify-content: flex-start
         align-items: flex-end
         margin: 0 0 40px
@@ -48,6 +52,8 @@
         .container
             padding-top: 75px
             display: block
+            min-height: unset
+            padding-bottom: 115vw
 
         .welcome
             max-width: 85%
@@ -67,8 +73,10 @@
         &__bg
             bottom: 0
             top: auto
-            height: 55%
-            width: 100%
+            height: 80%
+            width: 130%
+            max-width: unset
+            left: -15%
             object-position: right bottom
 
 .about
@@ -226,9 +234,9 @@
         background-size: 130% auto
 
 .menu
-    &-slider 
+    &-slider
         max-width: 1310px
-        margin: 0 auto 
+        margin: 0 auto
     &-slide
         display: flex !important
         justify-content: space-between
@@ -283,7 +291,7 @@
             display: block !important
             margin: 0 15px
 
-        &-wrap 
+        &-wrap
             display: block
             width: 100%
 
@@ -301,14 +309,14 @@
                 font-size: 14px
                 border-radius: 5px 0px 0px 5px
 
-        &-slide 
+        &-slide
             margin: 0 7.5px
 
         &__img
             border-radius: 10px
 
 .interior
-    display: none
+
     .container
         padding: 0
 
@@ -317,12 +325,13 @@
 
     &-slide
         width: 486px
-        margin: 0 30px
+        margin: 0 15px
         img
             display: block
             aspect-ratio: 1/1
             object-fit: cover
             border-radius: 17px
+            border: 15px solid #fff
 
     @media screen and ( max-width: 800px)
         .h2
@@ -354,6 +363,7 @@
         border-radius: 14px
         background-color: #1A1A1A
         padding: 33px 38px
+        border: 1px solid #454545
 
     &__label
         display: block
