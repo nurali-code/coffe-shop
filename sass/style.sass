@@ -7,6 +7,7 @@
 .main
     position: relative
     z-index: 1
+    overflow: hidden
     .container
         flex-direction: column
         align-items: baseline
@@ -34,7 +35,7 @@
         img
             display: block
 
-    &__up 
+    &__up
         font-size: 32px
         line-height: 39.01px
         margin: 0 0 12px
@@ -237,6 +238,7 @@
     &-slider
         max-width: 1310px
         margin: 0 auto
+
     &-slide
         display: flex !important
         justify-content: space-between
@@ -250,12 +252,12 @@
             width: 49%
 
     &-head
-        margin-bottom: 20px
+        margin-bottom: 31px
         position: relative
         z-index: 1
         border-radius: 17px
         overflow: hidden
-        border: 5px solid #9B5D4E
+        border: 1px solid #555555
         &__text
             display: inline-block
             padding: 25px
@@ -277,7 +279,17 @@
         img
             display: block
             width: 100%
-            aspect-ratio: 16/6.28
+            object-fit: cover
+            object-position: left center
+            aspect-ratio: 16/3.1
+
+        &.--sm
+            img
+                aspect-ratio: 16/9
+
+            .menu-head__text
+                padding: 25px 10px
+                min-width: 175px
 
     &__img
         width: 48%
@@ -297,6 +309,9 @@
 
         &-head
             width: 100%
+            img 
+                aspect-ratio: 16/7.853 !important
+
 
     @media screen and ( max-width: 700px )
         &-head
@@ -304,8 +319,8 @@
             border-radius: 10px
             margin-bottom: 17px
             &__text
-                min-width: 123px
-                padding: 15px 10px
+                min-width: 123px !important
+                padding: 15px 10px !important
                 font-size: 14px
                 border-radius: 5px 0px 0px 5px
 
