@@ -7,7 +7,7 @@
     <title>MOONRISE coffee</title>
     <meta name="theme-color" content="#222" />
     <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <link rel="stylesheet" href="./css/style.css?ver=12">
+    <link rel="stylesheet" href="./css/style.css?ver=14">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
 </head>
@@ -24,10 +24,10 @@
                 <a class="nav__link" href="#contacts">Контакты</a>
                 <div class="soc fx">
                     <span class="fx"><img src="img/location-2.svg" alt="loading">Москва, Береговой проезд 1 А</span>
-                    <a class="fx" href="mailto:moon_rise@list.ru"><img src="img/email-2.svg" alt="email">moon_rise@list.ru</a>
+                    <a class="fx" href="mailto:moon_rise@list.ru"><img src="img/email-2.svg"
+                            alt="email">moon_rise@list.ru</a>
                     <!-- <a class="soc__link" href="#"><img src="img/vk.svg" alt="vk"></a> -->
-                    <a class="soc__link" target="_blank"
-                        href="https://www.instagram.com/moonrise.coffeeee/">
+                    <a class="soc__link" target="_blank" href="https://www.instagram.com/moonrise.coffeeee/">
                         <img src="img/instagram.svg" alt="instagram">
                     </a>
                     <!-- <a class="soc__link" href="#"><img src="img/youtube.svg" alt="youtube"></a>
@@ -95,24 +95,39 @@
         <div class="container">
             <h2 class="h2">Меню</h2>
             <div class="menu-head">
-                <img src="img/head.jpg" loading="lazy" alt="head">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="img/slider/head-1_mob.jpg">
+                    <img src="img/head.jpg" loading="lazy" alt="head">
+                </picture>
                 <a href="img/menu-coffe.jpeg" data-fancybox="" class="menu-head__text">кофе</a>
             </div>
             <div class="menu-head">
-                <img src="img/head-2.jpg" loading="lazy" alt="head">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="img/slider/head-2_mob.jpg">
+                    <img src="img/head-2.jpg" loading="lazy" alt="head">
+                </picture>
                 <a href="img/menu-01.jpeg" class="menu-head__text" data-fancybox="">Завтраки</a>
             </div>
             <div class="menu-wrap fx">
                 <div class="menu-head --sm">
-                    <img src="img/head-3.jpg" loading="lazy" alt="head">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="img/slider/head-3_mob.jpg">
+                        <img src="img/head-3.jpg" loading="lazy" alt="head">
+                    </picture>
                     <a href="img/menu-01.jpeg" class="menu-head__text" data-fancybox="">десерты</a>
                 </div>
                 <div class="menu-head --sm">
-                    <img src="img/head-4.jpg" loading="lazy" alt="head">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="img/slider/head-4_mob.jpg">
+                        <img src="img/head-4.jpg" loading="lazy" alt="head">
+                    </picture>
                     <a href="img/menu-01.jpeg" class="menu-head__text" data-fancybox="">выпечка</a>
                 </div>
                 <div class="menu-head --sm">
-                    <img src="img/head-5.jpg" loading="lazy" alt="head">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="img/slider/head-5_mob.jpg">
+                        <img src="img/head-5.jpg" loading="lazy" alt="head">
+                    </picture>
                     <a href="img/menu-01.jpeg" class="menu-head__text" data-fancybox="">чай</a>
                 </div>
 
@@ -135,9 +150,10 @@
         <div class="container">
             <h2 class="h2">Наш интерьер и экстерьер</h2>
             <div class="interior-slider">
-                <div class="interior-slide"><img src="img/interior-1.jpg" alt="interior"></div>
-                <div class="interior-slide"><img src="img/interior-2.jpg" alt="interior"></div>
-                <div class="interior-slide"><img src="img/interior-3.jpg" alt="interior"></div>
+                <div class="interior-slide"><img src="img/slider/c-1.jpg" alt="interior"></div>
+                <div class="interior-slide"><img src="img/slider/c-2.jpg" alt="interior"></div>
+                <div class="interior-slide"><img src="img/slider/c-3.jpg" alt="interior"></div>
+                <div class="interior-slide"><img src="img/slider/c-4.jpg" alt="interior"></div>
             </div>
         </div>
     </section>
@@ -187,9 +203,8 @@
             </nav>
             <div class="soc fx">
                 <!-- <a href="#"><img src="img/vk.svg" alt="vk"></a> -->
-                <a target="_blank"
-                    href="https://www.instagram.com/moonrise.coffeeee/"><img
-                        src="img/instagram.svg" alt="instagram"></a>
+                <a target="_blank" href="https://www.instagram.com/moonrise.coffeeee/"><img src="img/instagram.svg"
+                        alt="instagram"></a>
                 <!-- <a href="#"><img src="img/youtube.svg" alt="youtube"></a>
                 <a href="#"><img src="img/telegram.svg" alt="telegram"></a> -->
             </div>
@@ -200,7 +215,7 @@
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/script.js?ver=12"></script>
+    <script src="js/script.js?ver=14"></script>
     <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </body>
