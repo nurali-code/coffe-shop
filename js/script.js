@@ -1,11 +1,12 @@
+AOS.init({ duration: 1000, });
 
 $('.btn_menu').on('click', function () {
     $('.nav, .btn_menu, body').toggleClass('is_active');
 })
+
 $('.nav__link').on('click', function () {
     $('.nav, .btn_menu, body').removeClass('is_active');
 })
-
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) { $('.header').addClass('fixed'); }
